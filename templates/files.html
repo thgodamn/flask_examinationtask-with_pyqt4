@@ -1,0 +1,10 @@
+<ul>
+    {% for file in files %}
+
+    <form class="download-form" action="{{ url_for('download') }}" method="POST" enctype="multipart/form-data" target="download_target">
+      <input type="submit" name="download_file" value="{{ file }}"  class="btn-link"/>
+    </form>
+
+    {% endfor %}
+</ul>
+<iframe id="download_target" name="download_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
