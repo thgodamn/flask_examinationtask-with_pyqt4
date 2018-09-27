@@ -4,7 +4,7 @@ import sys
 from PyQt4.QtGui import *
 from PyQt4.QtCore import QUrl
 from PyQt4.QtWebKit import *
-from threading import Thread
+#from threading import Thread
 from ftplib import FTP
 import ftplib
 import urllib
